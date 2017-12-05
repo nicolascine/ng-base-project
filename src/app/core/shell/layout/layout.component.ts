@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-main',
+  selector: 'app-layout',
   template: `
     <p>
-      main works!
+      layout works!
     </p>
   `,
   styles: []
 })
-export class MainComponent implements OnInit {
+export class LayoutComponent implements OnInit {
 
   constructor() { }
 

@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainComponent } from './main/main.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [MainComponent]
+  declarations: [
+    LayoutComponent
+  ],
+  exports: [
+    LayoutComponent
+  ]
 })
 export class ShellModule { }
