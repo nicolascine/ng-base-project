@@ -1,17 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-layout',
   template: `
     <p>
-      layout works!
+      {{ 'HELLO_WORLD' | translate }}
     </p>
   `,
   styles: []
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    translate: TranslateService
+  ) {
+    translate.setDefaultLang('en');
+    translate.use('en');
+  }
 
   ngOnInit() {
   }
