@@ -6,8 +6,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { CoreModule } from './core/core.module';
 import { LayoutComponent } from './core/shell/layout/layout.component';
+import { routing } from './app.routing';
 
-// AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -25,8 +25,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    routing,
   ],
-  providers: [],
   bootstrap: [
     LayoutComponent
   ]
