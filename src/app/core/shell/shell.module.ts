@@ -11,6 +11,7 @@ import { LayoutComponent } from './layout/layout.component';
   ],
   exports: [
     LayoutComponent
+    MainComponent
   ]
 })
 export class ShellModule { }
