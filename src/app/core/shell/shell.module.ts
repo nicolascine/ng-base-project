@@ -9,9 +9,6 @@ import { LayoutComponent } from './layout/layout.component';
   declarations: [
     LayoutComponent
   ],
-  exports: [
-    LayoutComponent
-    MainComponent
-  ]
+  exports: []
 })
 export class ShellModule { }
